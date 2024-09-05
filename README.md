@@ -1,15 +1,15 @@
 # Go Fiber Car Management API
 
-This is a simple RESTful API built with Go Fiber for managing car records. It provides basic CRUD operations for car entities using MongoDB as the database.
+This is a RESTful API built with Go Fiber for managing car records. It provides basic CRUD operations for car entities using MongoDB as the database.
 
 ## API Endpoints
 
 The API provides the following endpoints:
 
-- `GET /api/todos`: Retrieve all cars
-- `POST /api/todos`: Create a new car
-- `PATCH /api/todos/:id`: Update an existing car
-- `DELETE /api/todos/:id`: Delete a car
+- `GET /api/cars`: Retrieve all cars
+- `POST /api/cars`: Create a new car
+- `PATCH /api/cars/:id`: Update an existing car
+- `DELETE /api/cars/:id`: Delete a car
 
 ## Setup and Running
 
@@ -33,12 +33,12 @@ The API provides the following endpoints:
 
 ### Get All Cars
 ```
-GET /api/todos
+GET /api/cars
 ```
 
 ### Create a Car
 ```
-POST /api/todos
+POST /api/cars
 Content-Type: application/json
 
 {
@@ -48,7 +48,7 @@ Content-Type: application/json
 
 ### Update a Car
 ```
-PATCH /api/todos/:id
+PATCH /api/cars/:id
 Content-Type: application/json
 
 {
@@ -58,12 +58,8 @@ Content-Type: application/json
 
 ### Delete a Car
 ```
-DELETE /api/todos/:id
+DELETE /api/cars/:id
 ```
-
-## Note
-
-The current implementation uses "/api/todos" as the base path for car-related operations. Consider updating these routes to "/api/cars" for better semantic representation of the resource.
 
 ## Contributing
 
